@@ -45,6 +45,11 @@ group :development, :test do
   gem 'byebug'
   gem 'quiet_assets'
   gem 'dotenv-rails'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.0', require: false
+
 end
 
 group :development do
@@ -60,8 +65,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+=begin
 group :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'database_cleaner'
 end
+=end
